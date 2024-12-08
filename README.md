@@ -1,5 +1,5 @@
 # Online Donation
-JFSD S13 FRONTEND
+JFSD S22 FRONTEND
 
 This project provides a minimal setup to get React working in Vite with Hot Module Replacement (HMR) and some ESLint rules.
 
