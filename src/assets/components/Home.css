@@ -1,0 +1,151 @@
+/* General container styling */
+.home-container {
+  text-align: center;
+  background-color: #f5f5f5; /* Soft background color */
+  min-height: 100vh;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #333; /* Default text color */
+  padding: 0 20px;
+}
+
+/* Grid layout for cards */
+.orphans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 30px;
+  margin-top: 50px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Card styling */
+.orphan-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: linear-gradient(145deg, #ffffff, #f4f8fb); /* Subtle gradient */
+}
+
+.orphan-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15); /* Elevated hover effect */
+}
+
+/* Image styling */
+.orphan-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.orphan-card:hover img {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Title section styling */
+.orphan-card h2 {
+  margin: 20px 0 15px;
+  color: #333333;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 0 20px;
+}
+
+/* Button styling */
+.orphan-card button {
+  margin: 20px auto;
+  padding: 14px 28px;
+  background-color: #FF5A5F; /* Vibrant red */
+  color: white;
+  border: none;
+  border-radius: 30px; /* Fully rounded corners */
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: block;
+}
+
+.orphan-card button:hover {
+  background-color: #e04a50; /* Darker shade of red on hover */
+  transform: scale(1.05); /* Slight grow effect on hover */
+}
+
+/* Scrolling Text */
+.scrolling-text {
+  background-color: #fffbf2;
+  overflow: hidden;
+  position: relative;
+  font-size: 1.1rem;
+  padding: 16px;
+  margin: 30px 0;
+  color: #ff5733; /* Warm orange */
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+.scrolling-text .text {
+  display: inline-block;
+  animation: scroll-text 15s linear infinite;
+}
+
+@keyframes scroll-text {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Sign-up section */
+.sign-up-section {
+  margin: 50px auto;
+  padding: 36px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  max-width: 800px;
+  text-align: center;
+}
+
+.sign-up-section p {
+  margin: 16px 0;
+  color: #555;
+  font-size: 1.2rem;
+}
+
+.sign-up-section a {
+  color: #FF5A5F;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.sign-up-section a:hover {
+  color: #e04a50;
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .orphans-grid {
+    grid-template-columns: 1fr; /* Stack cards on small screens */
+    gap: 20px;
+  }
+
+  .orphan-card img {
+    height: 200px;
+  }
+
+  .sign-up-section {
+    margin: 20px;
+    padding: 28px;
+  }
+}

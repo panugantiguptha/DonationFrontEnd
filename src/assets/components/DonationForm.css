@@ -1,0 +1,61 @@
+.donation-form-container {
+  max-width: 420px; /* Slightly increased width for comfortable space */
+  margin: 40px auto; /* Centered layout with vertical spacing */
+  padding: 25px;
+  background: linear-gradient(145deg, #ffffff, #dfe4ea); /* Subtle light gradient */
+  border-radius: 15px; /* Smooth rounded corners */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Uniform spacing between elements */
+}
+
+input, select {
+  padding: 14px; /* Comfortable padding */
+  border: 1px solid #ccc; /* Subtle border */
+  border-radius: 10px; /* Rounded inputs */
+  font-size: 1rem; /* Standardized font size */
+  background: #f9f9f9; /* Light background for inputs */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+}
+
+input:focus, select:focus {
+  border-color: #007BFF; /* Highlighted blue border */
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.4); /* Soft glow effect */
+  outline: none; /* Remove default outline */
+}
+
+button {
+  background: linear-gradient(45deg, #007BFF, #0056b3); /* Dynamic gradient */
+  color: #fff; /* Bright text color */
+  padding: 14px;
+  border: none; /* Borderless button */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition effects */
+}
+
+button:hover {
+  background: linear-gradient(45deg, #0056b3, #003c82); /* Darker hover gradient */
+  transform: translateY(-3px); /* Slight lift effect */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Elevated shadow */
+}
+
+button:active {
+  transform: scale(0.97); /* Pressed effect */
+}
+
+@media (max-width: 600px) {
+  .donation-form-container {
+    padding: 20px; /* Adjusted padding for smaller devices */
+  }
+
+  input, select, button {
+    font-size: 0.95rem; /* Slightly reduced font size */
+  }
+}

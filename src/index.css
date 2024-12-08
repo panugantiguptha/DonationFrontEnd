@@ -1,0 +1,14 @@
+/* src/index.css */
+* {
+  box-sizing: border-box; /* Ensure padding and borders are included in total width and height */
+}
+
+html, body {
+  height: 100%; /* Full height */
+  margin: 0; /* Remove default margin */
+  font-family: Arial, sans-serif; /* Set a default font */
+}
+
+#root {
+  height: 100%; /* Make the root element take full height */
+}
